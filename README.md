@@ -1,3 +1,3 @@
 # satellite_deeplearning
 
-Satellite image processing for deep learning applications
+Satellite image processing for deep learning applications.
