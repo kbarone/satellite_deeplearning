@@ -10,6 +10,9 @@ from patchify import patchify
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from matplotlib import pyplot as plt
 import random
+import os
+
+current_directory = os.getcwd()
 
 def hex_to_rgb(class_type):
     """
@@ -70,7 +73,7 @@ def to_categorical(labels, num_classes):
 
 minmaxscaler = MinMaxScaler()
 #dataset_root_folder = '/content/drive/MyDrive/satellite'
-dataset_root_folder = '/Users/katybarone/Documents/uchicago/projects/satellite_deeplearning/semantic_segmentation_dataset'
+dataset_root_folder = '{}/semantic_segmentation_dataset'.format(current_directory)
 image_patch_size = 256
 
 def run():
